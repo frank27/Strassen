@@ -1,46 +1,60 @@
-Comparison between Standard and Strassen’s Algorithm for Matrix Multiplication.
+# Matrix Multiplication: Standard vs. Strassen’s Algorithm
 
-This project features a C++ backend managed by CMake and a Python-based data visualization component. The project includes an automated build-and-run script for a seamless development workflow.
-📋 Prerequisites
+This project compares the performance of the **Standard ()** matrix multiplication method against **Strassen’s Algorithm ()**. It features a high-performance C++ backend managed by CMake and a Python-based data visualization suite.
 
-Before you begin, ensure you have the following installed:
-System Tools
+## 📋 Prerequisites
 
-    C++ Compiler (GCC, Clang, or MSVC)
+Ensure you have the following installed on your system:
 
-    CMake (version 3.10 or higher)
+### System Tools
 
-    Make (for Unix environments)
+* **C++ Compiler:** GCC, Clang, or MSVC (supporting C++11 or higher).
+* **CMake:** Version 3.10 or higher.
+* **Make:** For Unix-based environments.
 
-Python Environment
+### Python Environment
 
-The visualization script requires Python 3 and the following libraries:
+The visualization script requires **Python 3** and the following libraries:
 
-    pandas
+* `pandas`
+* `matplotlib`
 
-    matplotlib
+---
 
-🚀 How to Build and Run
+## 🚀 How to Build and Run
 
-I have provided a bash script to automate the compilation and execution process. The script handles CMake configuration, building, and automatically locates the generated executable.
-Using the Automation Script
+I have provided a Bash script to automate the compilation and execution process. This script handles CMake configuration, building, and automatically locates the generated executable.
 
-    Give the script execution permissions:
-Bash
+### Using the Automation Script
 
+1. **Give the script execution permissions:**
+```bash
 chmod +x build.sh
 
-Run the script by passing the project directory as an argument:
-Bash
+```
 
-    ./build.sh .
 
-📊 Data Visualization
+2. **Run the script** by passing the project directory (usually the current directory) as an argument:
+```bash
+./build.sh .
 
-The project includes a Python script graph.py to visualize the data output from the C++ application.
+```
 
-Usage:
-After running the C++ executable (its generates a data file .csv), run:
-Bash
 
+
+---
+
+## 📊 Data Visualization
+
+The project includes a Python script, `graph.py`, to visualize the execution time and efficiency data output from the C++ application.
+
+### Usage
+
+Once the C++ executable has finished running and generated a `.csv` data file, generate your charts by running:
+
+```bash
 python graph.py
+
+```
+
+> **Note:** Ensure the generated CSV file is in the same directory as `graph.py` or update the script path accordingly.
