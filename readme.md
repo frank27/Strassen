@@ -26,7 +26,7 @@ I have provided a bash script to automate the compilation and execution process.
 Using the Automation Script
 
     Give the script execution permissions:
-    Bash
+Bash
 
 chmod +x build.sh
 
